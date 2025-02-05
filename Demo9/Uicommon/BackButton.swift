@@ -1,18 +1,25 @@
-//
-//  BackButton.swift
-//  Demo9
-//
-//  Created by student on 01/02/25.
-//
-
 import SwiftUI
 
 struct BackButton: View {
+    var destination: () -> any View
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink {
+            AnyView(destination())
+        } label: {
+            Image("back")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20)
+        }
     }
 }
 
-#Preview {
-    BackButton()
-}
+// Preview
+struct BackButton_Previews: PreviewProvider {
+    static var previews: some View {
+        BackButton {
+            Text("Destination View")
+        }
+    }
+} 

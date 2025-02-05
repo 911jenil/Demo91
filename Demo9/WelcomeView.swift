@@ -32,12 +32,12 @@ struct WelcomeView: View {
                 Text("Get your grosseries as fast as one hour")
                     .colorInvert()
                     .multilineTextAlignment(.center)
-                    .padding(.bottom, 30)
+                    .padding(.bottom,16)
                     .font(.customfont(.medium, fontSize: 16))
                             
                 
                 NavigationLink {
-                    Signinview()
+                Signinview()
                     } label: {
                                    Text("Get Started")
                                        .font(.customfont(.semibold, fontSize: 18))
@@ -63,7 +63,8 @@ struct WelcomeView: View {
         
     }
         }
-        
+    
+     
 #Preview {
     NavigationView{
         WelcomeView()

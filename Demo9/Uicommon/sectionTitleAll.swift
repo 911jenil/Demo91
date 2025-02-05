@@ -1,18 +1,36 @@
-//
-//  sectiontitalall.swift
-//  Demo9
-//
-//  Created by student on 01/02/25.
-//
-
 import SwiftUI
 
-struct sectiontitalall: View {
+struct SectionTitleAll: View {
+    var title: String
+    var titleAction: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(title)
+                .font(.customfont(.semibold, fontSize: 20))
+                .foregroundColor(.black)
+            
+            Spacer()
+            
+            Button {
+                titleAction()
+            } label: {
+                Text("See all")
+                    .font(.customfont(.medium, fontSize: 16))
+                    .foregroundColor(.primaryApp)
+            }
+        }
+        .padding(.horizontal)
     }
 }
 
-#Preview {
-    sectiontitalall()
-}
+// Preview
+struct SectionTitleAll_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            SectionTitleAll(title: "Exclusive Offer") {
+            }
+            
+        }
+    }
+} 
