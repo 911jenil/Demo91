@@ -1,19 +1,11 @@
 
 import SwiftUI
 import iPhoneNumberField
-import CountryPicker
 
-struct Signinview: View {
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.presentationMode) var presenttationmode
-    @State private var phoneNumber = ""
-    @State private var selectCountry = Country.india
-    @State private var showCountrypicker = false
-    
-    
+struct signinview: View {
     var body: some View {
         NavigationStack {
-            ZStack{
+            ZStack {
                 
                 Image("sign_in_top")
                     .resizable()
@@ -21,91 +13,87 @@ struct Signinview: View {
                     .ignoresSafeArea()
                     .frame(width: .screenWidth,height: .screenHeight)
                     .padding(.bottom,500)
-                Spacer()
                 
-                VStack {
-                    Text("Get your groceries \nwith nectar")
-                        .font(.customfont(.semibold, fontSize: 22))
-                        .padding(.trailing,200)
-                        .padding(.bottom,60)
-                        .foregroundColor(.primaryText)
-                        .multilineTextAlignment(.leading)
-                        .padding(.top, 550)
+                VStack{
                     
-                    HStack(spacing: 12) {
-                        Button(action: {
-                            showCountrypicker = true
-                        }) {
-                            HStack(spacing: 4)
-                            {
-                                
-                            }
+                    Text("get your grocceress \nwith nector")
+                        .padding(.bottom,120)
+                        .padding(.trailing,170)
+                        .font(.customfont(.semibold,fontSize: 24))
+                        .foregroundColor(.primaryText)
+                        .padding(.top,200)
+                    
+                    Rectangle()
+                        .frame(height: 1)
+                        .foregroundColor(.gray.opacity(0.4))
+                        .padding(.horizontal,30)
+                        .padding(.bottom,25)
+                    
+                    NavigationLink {
+                        loginView()
+                    } label: {
+                        Text("Countinue With Signin")
+                            .font(.customfont(.semibold, fontSize:20))
+                            .frame(minWidth: 0,maxWidth:.infinity,minHeight:30,maxHeight: 60)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .background(Color(hex:"5383EC"))
+                            .cornerRadius(20)
+                    }
+                    .padding(.bottom,5)
+                    .padding(.horizontal,20)
+                    
+                    NavigationLink{
+                        signupview()
+                    } label: {
+                        Text("countinue with signup")
+                            .font(.customfont(.semibold, fontSize: 20))
+                            .frame(minWidth: 0,maxWidth: .infinity,minHeight:30,maxHeight: 60)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .background(Color.primaryApp)
+                            .cornerRadius(20)
+                    }
+                    .padding(.horizontal,20)
+                    
+                    Divider()
+                        .frame(width: 350)
+                    
+                    VStack{
+                        Text("or connect with social media")
+                            .font(.customfont(.semibold, fontSize: 14))
+                            .foregroundColor(.gray.opacity(2))
+                            .padding(.top,5)
+                            .padding(.bottom,10)
+                            .multilineTextAlignment(.center)
+                        
+                        HStack
+                        {
+                            Image("google")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40,height: 40)
+                                .padding(.trailing,5)
+                            Image("facebook")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40,height: 40)
+                                .padding(.trailing,5)
+                            Image("apple_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40,height: 40)
+                                .padding(.trailing,5)
                         }
-                        
-                        Rectangle()
-                            .frame( width:150,height:1)
-                            .foregroundColor(.gray.opacity(0.3))
-                            .padding(.horizontal, 30)
-                            .padding(.bottom, 25)
-                        
-                        
-                        NavigationLink {
-                            loginview()
-                        } label: {
-                            Text("continue with signIn")
-                                .font(.customfont(.semibold, fontSize: 18))
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(minWidth: 0,maxWidth:.infinity,minHeight:60,maxHeight:60)
-                                .background(Color(hex: "5383EC"))
-                                .cornerRadius(20)
-                        }
-                        .padding(.horizontal,20)
-                        .padding(.bottom, 5)
-                        
-                        
-                        
-                        //                        Divider()
-                        //                            .frame(width:150)
-                        NavigationLink {
-                            loginview()
-                        } label: {
-                            VStack{
-                                Text("or connect with social media")
-                                    .font(.customfont(.semibold, fontSize: 16))
-                                    .foregroundColor(.textTitle)
-                                    .multilineTextAlignment(.center)
-                                    .padding(.top, 30)
-                                    .padding(.bottom, 15)
-                            }
-                            
-                        }
-                        VStack {
-                            HStack{
-                                BackButton {
-                                    WelcomeView()
-                                }
-                                Spacer()
-                            }
-                            Spacer()
-                        }
-                        .padding(.top, 60)
-                        .padding(.horizontal, 20)
                     }
                 }
-                .navigationTitle("")
-                .ignoresSafeArea()
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
             }
-            
         }
     }
 }
-
     #Preview {
-        NavigationView{
-            Signinview()
+        NavigationView {
+            signinview()
         }
     }
 

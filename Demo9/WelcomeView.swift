@@ -37,7 +37,7 @@ struct WelcomeView: View {
                             
                 
                 NavigationLink {
-                Signinview()
+                    signinview()
                     } label: {
                                    Text("Get Started")
                                        .font(.customfont(.semibold, fontSize: 18))

@@ -13,9 +13,10 @@
 		3F120B3B2D3E66E700F5B28F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F120B3A2D3E66E700F5B28F /* Preview Assets.xcassets */; };
 		3F120B422D3E66FB00F5B28F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F120B412D3E66FB00F5B28F /* Launch Screen.storyboard */; };
 		3F333ED92D3E7FB300525114 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F333ED82D3E7FB300525114 /* UIExtension.swift */; };
-		3F58F6052D4133050045AA79 /* loginview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58F6042D4133050045AA79 /* loginview.swift */; };
-		3FBC13572D3FB675009EE71A /* Signinview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13562D3FB675009EE71A /* Signinview.swift */; };
+		3FBC13572D3FB675009EE71A /* signinview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13562D3FB675009EE71A /* signinview.swift */; };
 		3FBC13592D3FB868009EE71A /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13582D3FB868009EE71A /* TabButton.swift */; };
+		3FCEFB632D560A1700307D20 /* signupview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEFB622D560A1700307D20 /* signupview.swift */; };
+		3FCEFB672D56148700307D20 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEFB662D56148700307D20 /* loginView.swift */; };
 		3FE062CB2D4E22DE00F50874 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE062CA2D4E22DE00F50874 /* BackButton.swift */; };
 		3FE062CD2D4E232B00F50874 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE062CC2D4E232B00F50874 /* Country.swift */; };
 		3FE062CF2D4E237200F50874 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE062CE2D4E237200F50874 /* CountryPickerView.swift */; };
@@ -23,7 +24,6 @@
 		3FE062DA2D4E4F1500F50874 /* serviceTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE062D92D4E4F1500F50874 /* serviceTextfield.swift */; };
 		3FE062EA2D4E562A00F50874 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE062E92D4E562A00F50874 /* UIKitExtension.swift */; };
 		3FE713B82D5377470031D4A5 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE713B72D5377470031D4A5 /* iPhoneNumberField */; };
-		3FE713BB2D5377680031D4A5 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE713BA2D5377680031D4A5 /* CountryPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,9 +51,10 @@
 		3F120B462D3E685300F5B28F /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		3F120B472D3E68F300F5B28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3F333ED82D3E7FB300525114 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
-		3F58F6042D4133050045AA79 /* loginview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginview.swift; sourceTree = "<group>"; };
-		3FBC13562D3FB675009EE71A /* Signinview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signinview.swift; sourceTree = "<group>"; };
+		3FBC13562D3FB675009EE71A /* signinview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinview.swift; sourceTree = "<group>"; };
 		3FBC13582D3FB868009EE71A /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		3FCEFB622D560A1700307D20 /* signupview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupview.swift; sourceTree = "<group>"; };
+		3FCEFB662D56148700307D20 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		3FE062CA2D4E22DE00F50874 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		3FE062CC2D4E232B00F50874 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		3FE062CE2D4E237200F50874 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE713B82D5377470031D4A5 /* iPhoneNumberField in Frameworks */,
-				3FE713BB2D5377680031D4A5 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +99,9 @@
 				3F120B472D3E68F300F5B28F /* Info.plist */,
 				3F120B412D3E66FB00F5B28F /* Launch Screen.storyboard */,
 				3F120B352D3E66E500F5B28F /* WelcomeView.swift */,
-				3FBC13562D3FB675009EE71A /* Signinview.swift */,
-				3F58F6042D4133050045AA79 /* loginview.swift */,
+				3FBC13562D3FB675009EE71A /* signinview.swift */,
+				3FCEFB662D56148700307D20 /* loginView.swift */,
+				3FCEFB622D560A1700307D20 /* signupview.swift */,
 				3F120B372D3E66E700F5B28F /* Assets.xcassets */,
 				3FBC13552D3FB3B8009EE71A /* Uicommon */,
 				3F120B392D3E66E700F5B28F /* Preview Content */,
@@ -196,7 +197,6 @@
 			mainGroup = 3F120B272D3E66E500F5B28F;
 			packageReferences = (
 				3FE713B62D5377470031D4A5 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
-				3FE713B92D5377680031D4A5 /* XCRemoteSwiftPackageReference "CountryPicker" */,
 			);
 			productRefGroup = 3F120B312D3E66E500F5B28F /* Products */;
 			projectDirPath = "";
@@ -229,14 +229,15 @@
 				3F333ED92D3E7FB300525114 /* UIExtension.swift in Sources */,
 				3FE062DA2D4E4F1500F50874 /* serviceTextfield.swift in Sources */,
 				3FE062CD2D4E232B00F50874 /* Country.swift in Sources */,
-				3FBC13572D3FB675009EE71A /* Signinview.swift in Sources */,
+				3FBC13572D3FB675009EE71A /* signinview.swift in Sources */,
 				3FBC13592D3FB868009EE71A /* TabButton.swift in Sources */,
 				3FE062EA2D4E562A00F50874 /* UIKitExtension.swift in Sources */,
 				3FE062D82D4E4E8300F50874 /* sectionTitleAll.swift in Sources */,
-				3F58F6052D4133050045AA79 /* loginview.swift in Sources */,
+				3FCEFB632D560A1700307D20 /* signupview.swift in Sources */,
 				3FE062CB2D4E22DE00F50874 /* BackButton.swift in Sources */,
 				3FE062CF2D4E237200F50874 /* CountryPickerView.swift in Sources */,
 				3F120B342D3E66E500F5B28F /* Demo9App.swift in Sources */,
+				3FCEFB672D56148700307D20 /* loginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,14 +455,6 @@
 				minimumVersion = 0.10.4;
 			};
 		};
-		3FE713B92D5377680031D4A5 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/CountryPicker.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.3;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -469,11 +462,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3FE713B62D5377470031D4A5 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
 			productName = iPhoneNumberField;
-		};
-		3FE713BA2D5377680031D4A5 /* CountryPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3FE713B92D5377680031D4A5 /* XCRemoteSwiftPackageReference "CountryPicker" */;
-			productName = CountryPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
